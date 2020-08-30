@@ -19,6 +19,8 @@
 
 동적인 웹 어플리케이션을 만들고 싶고, 유지 보수가 용이한 웹 애플리케이션을 만들고 싶으므로 ReactJS 선택.
 관련 자료가 많은 것도 선택에 영향을 주었다.
+React를 사용할 시 디버깅을 쉽게 하기 위하여 typescript를 사용하기로 했다.
+
 
 #### Backend : expressJS
 > Why expressJS?   
