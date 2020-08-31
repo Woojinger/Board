@@ -1,0 +1,46 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "node-sass-chokidar": "^1.5.0",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3",
+    "typescript": "~3.7.2"
+  },
+  "scripts": {
+    "start": "npm-run-all -p watch-css start-js",
+    "watch-css": "npm run build-css && node-sass-chokidar ./src/ --output ./src/ --output-style compressed --watch --recursive",
+    "start-js": "react-scripts start",
+    "build": "npm-run-all build-css build-js",
+    "build-css": "node-sass-chokidar ./src/ --output ./src/ --output-style compressed",
+    "build-js": "react-scripts build",
+    "postbuild": "mv ./build/favicons/* ./build/ && rm -r ./build/favicons && purgecss --css build/static/css/*.css --content build/static/index.html build/static/js/*.js --out build/static/css",
+    "test": "npm-run-all build-css build-js && react-scripts test --env=jsdom",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

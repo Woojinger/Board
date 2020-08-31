@@ -1,0 +1,24 @@
+@mixin nav($str-color,$change-color){
+    display: block; width: 200px; height: 50px; line-height: 50px; 
+    font-size :20px;
+    color:$str-color;
+    float:left;
+    &:hover {color:$change-color;}
+}
+
+@mixin clear{
+    &:after { content:"";display: block; clear:both;}
+}
+
+.header {
+    padding: 0 5%;
+    background:#85C1E9;
+    //transition: height 0.3s ease;
+    text-align: center; 
+    @include clear;
+    > span{
+        &.Home {@include nav(gray,white)}
+        &.About {@include nav(gray,white)}
+        &.Portfolio {@include nav(gray,white)}
+    }
+}

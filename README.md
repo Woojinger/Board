@@ -7,7 +7,7 @@
 
 ## Language, DB
 #### Frontend : React
->  **Why React?**
+>  **Why React?**   
 참고자료 : 
 [youthfulhps 블로그][youthfulhps]
 [velopert][velopert]
@@ -19,9 +19,11 @@
 
 동적인 웹 어플리케이션을 만들고 싶고, 유지 보수가 용이한 웹 애플리케이션을 만들고 싶으므로 ReactJS 선택.
 관련 자료가 많은 것도 선택에 영향을 주었다.
+React를 사용할 시 디버깅을 쉽게 하기 위하여 typescript를 사용하기로 했다.
+
 
 #### Backend : expressJS
-> Why expressJS?
+> Why expressJS?   
 참고자료 : <https://medium.com/@micheleriva/properly-deploy-reactjs-with-expressjs-e1ac376dfede>
 
 * **Javascript 기반(언어 통일)**
@@ -29,7 +31,7 @@
 * **NodeJS API 사용 가능**
 
 #### DB : MySQL
-> Why MySQL?
+> Why MySQL?   
 참고 자료 :
 [나의 블로그][나의 블로그]
 
