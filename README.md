@@ -28,6 +28,7 @@ React를 사용할 시 디버깅을 쉽게 하기 위하여 typescript를 사용
 
 * **Javascript 기반(언어 통일)**
 * **Server Side Rendering에 강점**
+서버사이드렌더링이 필요하면 구현할 
 * **NodeJS API 사용 가능**
 
 #### DB : MySQL
