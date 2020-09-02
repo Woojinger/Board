@@ -4,6 +4,7 @@
 * 2020.08.27 ~ : 기존 소스코드 분석
 * 2020.08.28 ~ 2020.08.30 : 사용 언어, DB 정하기
 * 2020.08.31 : React 설치 및 SCSS 공부, node-sass 설치
+* 2020.09.02 : Redux 설치
 
 ## Language, DB
 #### Frontend : React
